@@ -8,8 +8,14 @@ h1 {
 
 .photos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
+
+@media (min-width: 992px) {
+    .photos {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .gatsby-image-wrapper {
