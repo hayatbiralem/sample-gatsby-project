@@ -7,7 +7,8 @@ import "./index.css"
 const IndexPage = ({data}) => {
     console.log(data);
     return <div>
-        <h1>Merhaba!</h1>
+        <h1>Hello!</h1>
+        <p>This is my first Gatsby project.</p>
 
         <div className="photos">
             {data.allFile.edges.map(({node}) => {
